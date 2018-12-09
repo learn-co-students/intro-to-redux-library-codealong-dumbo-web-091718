@@ -6,7 +6,6 @@ class App extends Component {
 	handleOnClick = event => {
 		this.props.increaseCount();
 	};
-
 	render() {
 		return (
 			<div className="App">
@@ -29,7 +28,4 @@ const mapDispatchToProps = dispatch => {
 	};
 };
 
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(App);
+export default connect(mapStateToProps,mapDispatchToProps)(App);
